@@ -1,0 +1,59 @@
+<r v="root" k="root">
+    <r v="Alabama" k="AL"/>
+    <r v="Alaska" k="AK"/>
+    <r v="American Samoa" k="AS"/>
+    <r v="Arizona" k="AZ"/>
+    <r v="Arkansas" k="AR"/>
+    <r v="California" k="CA"/>
+    <r v="Colorado" k="CO"/>
+    <r v="Connecticut" k="CT"/>
+    <r v="Delaware" k="DE"/>
+    <r v="District of Columbia" k="DC"/>
+    <r v="Florida" k="FL"/>
+    <r v="Georgia" k="GA"/>
+    <r v="Guam" k="GU"/>
+    <r v="Hawaii" k="HI"/>
+    <r v="Idaho" k="ID"/>
+    <r v="Illinois" k="IL"/>
+    <r v="Indiana" k="IN"/>
+    <r v="Iowa" k="IA"/>
+    <r v="Kansas" k="KS"/>
+    <r v="Kentucky" k="KY"/>
+    <r v="Louisiana" k="LA"/>
+    <r v="Los Angeles" k="LAS"/>
+    <r v="Maine" k="ME"/>
+    <r v="Maryland" k="MD"/>
+    <r v="Massachusetts" k="MA"/>
+    <r v="Michigan" k="MI"/>
+    <r v="Minnesota" k="MN"/>
+    <r v="Mississippi" k="MS"/>
+    <r v="Missouri" k="MO"/>
+    <r v="Montana" k="MT"/>
+    <r v="Nebraska" k="NE"/>
+    <r v="Nevada" k="NV"/>
+    <r v="New Hampshire" k="NH"/>
+    <r v="New Jersey" k="NJ"/>
+    <r v="New Mexico" k="NM"/>
+    <r v="New York" k="NY"/>
+    <r v="North Carolina" k="NC"/>
+    <r v="North Dakota" k="ND"/>
+    <r v="Northern Marianas Islands" k="MP"/>
+    <r v="Ohio" k="OH"/>
+    <r v="Oklahoma" k="OK"/>
+    <r v="Oregon" k="OR"/>
+    <r v="Pennsylvania" k="PA"/>
+    <r v="Puerto Rico" k="PR"/>
+    <r v="Rhode Island" k="RI"/>
+    <r v="South Carolina" k="SC"/>
+    <r v="South Dakota" k="SD"/>
+    <r v="Tennessee" k="TN"/>
+    <r v="Texas" k="TX"/>
+    <r v="Utah" k="UT"/>
+    <r v="Vermont" k="VT"/>
+    <r v="Virginia" k="VA"/>
+    <r v="Virgin Islands" k="VI"/>
+    <r v="Washington" k="WA"/>
+    <r v="West Virginia" k="WV"/>
+    <r v="Wisconsin" k="WI"/>
+    <r v="Wyoming" k="WY"/>
+</r>

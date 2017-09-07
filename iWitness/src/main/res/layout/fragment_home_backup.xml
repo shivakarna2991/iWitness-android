@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <fragment android:id="@+id/mapView" class="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"/>
+
+    <Button android:id="@+id/armButton" style="@style/ButtonArm"
+            android:text="@string/cap_arm_iwitness"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+</RelativeLayout>
+

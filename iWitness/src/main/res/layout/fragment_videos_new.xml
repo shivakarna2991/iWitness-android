@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@drawable/texture02_repeating"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_top_bar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="@string/videos_stored"/>
+
+    </LinearLayout>
+    <!--<com.iwitness.android.libraries.widgets.VideoListView
+            android:id="@+id/lsVideoList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lsVideoList"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+            style="@style/TextView"
+            android:id="@+id/tvEmptyVideoList"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_video_list"
+            android:visibility="gone"
+            android:layout_margin="20dp">
+
+    </TextView>
+
+    <ProgressBar
+            android:id="@+id/progress"
+            android:visibility="visible"
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"/>
+
+
+</LinearLayout>

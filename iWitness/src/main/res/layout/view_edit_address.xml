@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView"
+        android:background="@drawable/texture02_repeating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <EditText style="@style/EditText"
+                  android:layout_gravity="center"
+                  android:hint="@string/address_1"
+                  android:id="@+id/address1EditText"
+                >
+            <requestFocus/>
+        </EditText>
+
+        <EditText style="@style/EditText"
+                  android:layout_marginTop="15dp"
+                  android:layout_gravity="center"
+                  android:hint="@string/address_2"
+                  android:id="@+id/address2EditText"
+                />
+
+        <EditText style="@style/EditText"
+                  android:layout_marginTop="15dp"
+                  android:layout_gravity="center"
+                  android:hint="@string/city"
+                  android:id="@+id/cityEditText"
+                />
+
+        <EditText style="@style/EditText"
+                  android:layout_marginTop="15dp"
+                  android:layout_gravity="center"
+                  android:hint="@string/state"
+                  android:focusable="false"
+                  android:onClick="onChooseState"
+                  android:id="@+id/stateEditText"
+                />
+
+        <EditText style="@style/EditText"
+                  android:layout_marginTop="15dp"
+                  android:layout_marginBottom="20dp"
+                  android:layout_gravity="center"
+                  android:hint="@string/Zipcode"
+                  android:maxLength="10"
+                  android:id="@+id/zipEditText"
+                  android:inputType="phone"/>
+    </LinearLayout>
+</ScrollView>

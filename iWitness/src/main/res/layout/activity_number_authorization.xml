@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.iwitness.androidapp.controllers.authentication.NumberAuthorizationActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/iwitness_logo_margin_top"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/iw_icon_logo" />
+
+    <TextView
+        android:id="@+id/textViewEnterVerificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:layout_marginTop="@dimen/enter_verification_code_text_margin_top"
+        android:gravity="center_horizontal"
+        android:text="@string/enter_number_verification_string"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/enter_verification_code_text_size" />
+
+    <LinearLayout
+        android:id="@+id/layoutForEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/textViewEnterVerificationCode"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/edittextAuthorizationField1"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:background="@drawable/left_rounded_corner_shape"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:cursorVisible="true"
+            android:maxLength="1"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edittextAuthorizationField2"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangle_background"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:cursorVisible="true"
+            android:maxLength="1"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edittextAuthorizationField3"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangle_background"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:cursorVisible="true"
+            android:maxLength="1"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edittextAuthorizationField4"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:background="@drawable/right_rounded_corner_shape"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:cursorVisible="true"
+            android:maxLength="1"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewYouWillReceiveVerificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutForEditText"
+        android:layout_marginTop="@dimen/you_received_verification_code_text_message_text_marginTop"
+        android:gravity="center_horizontal"
+        android:text="@string/you_received_code_text_message_string"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/you_will_receive_text_message_text_size" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="181dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/textViewYouWillReceiveVerificationCode"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/circle_edge_button_transparent"
+        android:text="@string/submit_Authorization_code"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/textViewDidntReceivedVerificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_marginTop="@dimen/you_received_verification_code_text_message_text_marginTop"
+        android:gravity="center_horizontal"
+        android:text="@string/did_not_received_code_text_message_string"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/you_will_receive_text_message_text_size" />
+
+    <Button
+        android:id="@+id/btnReSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDidntReceivedVerificationCode"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:text="@string/reSend_Authorization_code"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+
+
+
+</RelativeLayout>

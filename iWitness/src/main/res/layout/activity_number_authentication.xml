@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.iwitness.androidapp.controllers.authentication.NumberAuthenticationActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/iw_icon_logo" />
+
+    <TextView
+        android:id="@+id/textViewEnterNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:layout_marginTop="@dimen/enter_number_text_margin_top"
+        android:gravity="center_horizontal"
+        android:text="@string/enter_number_string"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/enter_number_text_size" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="@dimen/enter_number_text_editText_width"
+        android:layout_height="@dimen/enter_number_text_editText_height"
+        android:layout_below="@+id/textViewEnterNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/enter_number_text_editText_marginTop"
+        android:background="@drawable/circle_edge_edittext"
+        android:ellipsize="start"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/phone_no"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="@color/color_hint_text_color"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/textViewYouWillReceiveTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneEditText"
+        android:layout_marginTop="@dimen/you_will_receive_text_message_text_marginTop"
+        android:gravity="center_horizontal"
+        android:text="@string/you_will_receive_text_message_string"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/you_will_receive_text_message_text_size" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="181dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/textViewYouWillReceiveTextMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/circle_edge_button_transparent"
+        android:text="@string/send_Authentication_code"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+
+</RelativeLayout>

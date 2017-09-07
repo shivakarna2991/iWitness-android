@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView"
+        android:background="@drawable/texture02_repeating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <EditText style="@style/EditText"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:hint="@string/distinguish"
+              android:id="@+id/txtDistFeatures"
+            >
+        <requestFocus/>
+    </EditText>
+
+    <EditText style="@style/EditText"
+              android:layout_marginTop="15dp"
+              android:layout_gravity="center"
+              android:hint="@string/height"
+              android:gravity="center"
+              android:id="@+id/txtHeight"
+              android:focusable="false"
+              android:onClick="onChooseHeight"
+              android:inputType="number"/>
+
+    <EditText style="@style/EditText"
+              android:layout_marginTop="15dp"
+              android:layout_gravity="center"
+              android:hint="@string/weight"
+              android:gravity="center"
+              android:id="@+id/txtWeight"
+              android:maxLength="3"
+              android:singleLine="true"
+              android:inputType="number"/>
+
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content" >
+
+        <EditText style="@style/EditText"
+                  android:layout_gravity="center"
+                  android:hint="@string/eye_color"
+                  android:gravity="left"
+                  android:paddingLeft="100dp"
+                  android:focusable="false"
+                  android:onClick="onChooseEyeColor"
+                  android:id="@+id/txtEyeColor"
+                />
+
+        <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/eye_color_label" />
+    </FrameLayout>
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content" >
+
+        <EditText style="@style/EditText"
+                  android:layout_gravity="center"
+                  android:hint="@string/hair_color"
+                  android:gravity="left"
+                  android:id="@+id/txtHairColor"
+                  android:paddingLeft="100dp"
+                  android:focusable="false"
+                  android:onClick="onChooseHairColor"
+                  android:inputType="number"/>
+
+        <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/hair_color_label" />
+    </FrameLayout>
+
+
+
+    <EditText style="@style/EditText"
+              android:layout_marginTop="15dp"
+              android:layout_gravity="center"
+              android:hint="@string/ethnicity"
+              android:gravity="center"
+              android:id="@+id/txtEthnicity"
+              android:focusable="false"
+              android:onClick="onChooseEthnicity"
+            />
+
+
+</LinearLayout>
+    </ScrollView>

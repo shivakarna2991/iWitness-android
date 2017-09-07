@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="master_background">#373737</color>
+    <color name="master_highlight">#595959</color>
+    <color name="grey">#88898a</color>
+    <color name="blue">#001BFF</color>
+    <color name="green">#00ff00</color>
+    <color name="red">#ff0000</color>
+    <color name="red_dark">#C1272E</color>
+    <color name="grey_dark">#4d4d4d</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="black_login">#303030</color>
+    <color name="black_toolbar">#2E2E2E</color>
+    <color name="black_forgot">#1B1B1B</color>
+    <color name="white">#ffffff</color>
+
+    <color name="color_hint_text_color">#5B6770</color>
+    <color name="color_ming">#3C8189</color>
+    <color name="color_black">#000000</color>
+    
+    <color name="color_alabaster">#80FCFCFC</color>
+    <color name="color_foam">#CCFCFCFC</color>
+    <color name="color_cyan">#33FFFFFF</color>
+    <color name="color_active_switch">#44db5e</color>
+    <color name="color_disabled_text_in_bottomsheet">#D1D1D1</color>
+    <color name="color_enabled_text_in_bottomsheet">#4A4A4A</color>
+    <color name="color_current_selected_item_background_in_drawer_layout">#73000000</color>
+   
+
+    <!-- Toolbar Colors -->
+    <color name="toolbar_background_color">#66000000</color>
+
+    <!-- Alert Dialog Colors -->
+    <color name="color_alert_dialog_button_color">#537ff2</color>
+    
+    <!-- Profile Text Colors -->
+    <color name="color_divider_line">#D0021b</color>
+
+    <!-- common color codes -->
+    <color name="color_gray1">#030303</color>
+
+
+
+
+</resources>

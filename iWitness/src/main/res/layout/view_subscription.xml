@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_background">
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/iw_icon_logo" />
+
+        <TextView
+            android:id="@+id/textAppThatSaveYourLife"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivLogo"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/str_app_that_save_your_life"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textSubscribeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAppThatSaveYourLife"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/str_subscribe_text"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnMonthlySubscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textSubscribeText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle_edge_button_transparent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/monthly_subscription"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:onClick="handlePurchaseSubscription"/>
+
+        <Button
+            android:id="@+id/btnAnnualSubscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnMonthlySubscription"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle_edge_button_transparent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/yearly_subscription"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tv_learnmore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/str_learn_more"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+
+    <!-- <include
+         android:id="@+id/toolbar"
+         layout="@layout/toolbar_subscription"
+         android:visibility="gone"/>
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:orientation="vertical"
+         android:id="@+id/linearLayout2"
+         android:visibility="gone">
+
+         <RadioGroup
+             android:id="@+id/rgSubscriptions"
+             style="@style/RadioButtonGroup"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:orientation="vertical">
+
+             <RadioButton
+                 android:id="@+id/monthlyRadioButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:onClick="handleSubscriptionSelected"
+                 android:text="@string/monthly_subscription"
+                 android:textColor="@android:color/white"
+                 android:textSize="18sp" />
+
+             <RadioButton
+                 android:id="@+id/yearlyRadioButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:onClick="handleSubscriptionSelected"
+                 android:text="@string/yearly_subscription"
+                 android:textColor="@android:color/white"
+                 android:textSize="18sp" />
+         </RadioGroup>
+
+         <Button
+             android:id="@+id/btnBuy"
+             style="@style/ButtonLarge"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginTop="20dp"
+             android:onClick="handlePurchaseSubscription"
+             android:text="@string/purchase" />
+     </LinearLayout>-->
+
+
+</RelativeLayout>
+
+
+    <!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_forgot"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_subscription"></include>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <RadioGroup
+            android:id="@+id/rgSubscriptions"
+            style="@style/RadioButtonGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/monthlyRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="handleSubscriptionSelected"
+                android:text="@string/monthly_subscription"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/yearlyRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="handleSubscriptionSelected"
+                android:text="@string/yearly_subscription"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnBuy"
+            style="@style/ButtonLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="handlePurchaseSubscription"
+            android:text="@string/purchase" />
+    </LinearLayout>
+
+
+
+    </RelativeLayout>-->

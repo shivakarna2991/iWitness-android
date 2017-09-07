@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:abc="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/actionAdd"
+        android:title=""
+        android:icon="@drawable/add_share"
+        android:orderInCategory="100"
+        abc:showAsAction="always" />
+
+  <!--  <item android:id="@+id/actionShare"
+          android:title="@string/share"
+          android:orderInCategory="101"
+          abc:showAsAction="always" />-->
+</menu>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture02_repeating"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+    <EditText
+        android:id="@+id/search_txt"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableRight="@drawable/edit_search"
+        android:inputType="textNoSuggestions"
+        android:imeOptions="actionSearch"
+        android:singleLine="true" />
+
+    <ListView
+        android:id="@+id/contactList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_txt"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dp"
+        />
+
+    <include layout="@layout/progress_dialog_custom" />
+
+</RelativeLayout>

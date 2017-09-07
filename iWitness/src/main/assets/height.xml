@@ -1,0 +1,26 @@
+<r v="root" k="root">
+    <r v="Decimal Part" k="heightInches">
+        <r v="0&quot;" k="0&quot;"/>
+        <r v="1&quot;" k="1&quot;"/>
+        <r v="2&quot;" k="2&quot;"/>
+        <r v="3&quot;" k="3&quot;"/>
+        <r v="4&quot;" k="4&quot;"/>
+        <r v="5&quot;" k="5&quot;"/>
+        <r v="6&quot;" k="6&quot;"/>
+        <r v="7&quot;" k="7&quot;"/>
+        <r v="8&quot;" k="8&quot;"/>
+        <r v="9&quot;" k="9&quot;"/>
+        <r v="10&quot;" k="10&quot;"/>
+        <r v="11&quot;" k="11&quot;"/>
+    </r>
+    <r v="Int Part" k="heightFeets">
+        <r v="0'" k="0'"/>
+        <r v="1'" k="1'"/>
+        <r v="2'" k="2'"/>
+        <r v="3'" k="3'"/>
+        <r v="4'" k="4'"/>
+        <r v="5'" k="5'"/>
+        <r v="6'" k="6'"/>
+        <r v="7'" k="7'"/>
+    </r>
+</r>

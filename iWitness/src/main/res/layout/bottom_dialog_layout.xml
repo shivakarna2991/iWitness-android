@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_with_alabaster_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded_corners_with_foam_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/call911LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/call911Image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/icon_police_red" />
+
+                <TextView
+                    android:id="@+id/call911Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="CALL 911" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/call911SwitchButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:theme="@style/MySwitch"
+                    app:track="@drawable/switch_compat_style"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/emergencyNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/emergencyNumberImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/icon_emergency_contact_red" />
+
+                <TextView
+                    android:id="@+id/emergencyNumberTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="@string/str_call_emergency_contact" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/emergencyNumberSwitchButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:theme="@style/MySwitch"
+                    app:track="@drawable/switch_compat_style"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/soundAndLightAlarmLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/soundAndLightAlarmImageView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/icon_alarm_red" />
+
+                <TextView
+                    android:id="@+id/soundAndLightAlarmTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="@string/str_sound_and_alarm" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/soundAndLightAlarmSwitchButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:theme="@style/MySwitch"
+                    app:track="@drawable/switch_compat_style"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/str_close"
+        android:textAllCaps="true"
+        android:background="@drawable/roundwhite_border_button"/>
+
+
+</LinearLayout>

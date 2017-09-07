@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iWitness</string>
+    <string name="home">Camera</string>
+    <string name="iwitness_title">iWitness</string>
+    <string name="add_more">Add More</string>
+    <string name="settings">Settings</string>
+    <string name="preferences">Preferences</string>
+    <string name="cap_arm_iwitness">ARM IWITNESS</string>
+    <string name="cap_or">OR</string>
+    <string name="cap_rec">REC</string>
+    <string name="events_history">Events History</string>
+    <string name="event_playback">Event Playback</string>
+    <string name="call_now">Call</string>
+    <string name="call_911_now">%s Now</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="exit">Exit</string>
+    <string name="login">Login</string>
+    <string name="videos">Videos</string>
+    <string name="tips_tutorials">Tips/Tutorial</string>
+    <string name="demo">Demo</string>
+    <string name="Continue">Continue</string>
+    <string name="register">Register</string>
+    <string name="register_profile">Register Profile</string>
+    <string name="share_with_friends">Share With Friends</string>
+    <string name="SaveContinue"><![CDATA[Save & Continue]]></string>
+    <string name="Skip">Skip</string>
+    <string name="armed">Armed</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email</string>
+    <string name="email_address_new">Email Address</string>
+    <string name="email_optional">Email (Optional)</string>
+    <string name="phone_number">Phone No</string>
+    <string name="phone_number_new">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="profile">Profile</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="fields_mandatory"> * All fields are mandatory.</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="SkipRegisterProfileConformation">Are you sure you want to skip this? Once you leave the app you won\'t
+        be able to log-in and use iWitness as we need this basic information to set up your account
+    </string>
+    <string name="could_not_load_video_list">Could not load events at the moment. Please try again later.</string>
+    <string name="recipient_name_required">Please enter the recipient\'s name before sending.</string>
+    <string name="recipient_email_required">Please enter the recipient\'s email address before sending.</string>
+
+    <string name="recipient_name_and_email_is_required">Please enter the recipient\'s name and email address before sending.</string>
+    <string name="EmailPattern">^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$</string>
+    <string name="phone_pattern">^(?:(?:\\+?1\\s*(?:[.-]\\s*)?)?(?:\\(\\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\\s*\\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\\s*(?:[.-]\\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\\s*(?:[.-]\\s*)?([0-9]{4})(?:\\s*(?:#|x\\.?|ext\\.?|extension)\\s*(\\d+))?$</string>
+    <string name="password_pattern">^.*(?=.{8,})(?=..*[0-9])(?=.*[a-z])(?=.*[A-Z]).*$</string>
+    <string name="MultipleEmailPattern">^([_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,});?)+$</string>
+    <string name="enter_required">Please enter required fields.</string>
+    <string name="FirstNameRequired">First name is required</string>
+    <string name="InvalidEmailAddress">Invalid Email Address</string>
+    <string name="invalid_phone_number">Invalid mobile Number</string>
+    <string name="unauthorized_access">Unauthorized access</string>
+    <string name="invalid_password">Invalid password format. A valid password must be at least 8 characters, must contain at least one upper case, one lower case, and one number.</string>
+    <string name="LastNameRequired">Last name is required</string>
+    <string name="EmailRequired">Email is required</string>
+    <string name="PhoneRequired">Mobile Number is required</string>
+    <string name="PasswordRequired">Password is required</string>
+    <string name="ConfirmPasswordNotMatch">Invalid new password. A valid password must be at least 8 characters, must contain at least one uppercase, one lowercase and one number.</string>
+    <string name="CurrentPasswordNotMatch">Invalid current password. A valid password must be at least 8 characters, must contain at least one uppercase, one lowercase and one number.</string>
+    <string name="ChangePassword"><u>Update password</u></string>
+    <string name="current_new_passwordnotmatch">New password and confirm password does not match.</string>
+    <string name="old_new_pwd_notsame">Old and New password should not be same.</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="RegisterProfile">Register Profile</string>
+    <string name="PersonalizedMessage">Personalized message</string>
+    <string name="InvitationMessage">Hi, \n\nI\'m using the iWitness app because I want to stay safe. I hope you\'ll
+        check it out too.
+    </string>
+    <string name="address_1">ADDRESS</string>
+    <string name="address_2">Address 2 (Optional)</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="state_select">Select State</string>
+    <string name="send">Send</string>
+    <string name="send_invitation">Share</string>
+    <string name="additional_dist">Additional Distinguishing Features</string>
+    <string name="Zipcode">Zip</string>
+    <string name="country">Country</string>
+    <string name="ChooseValue">Choose Value</string>
+    <string name="Save">Save</string>
+    <string name="RegisterEmergencyContacts">Register Emergency Contacts</string>
+    <string name="skip_register_emergency_contacts">Are you sure you want to skip this step? If you are in danger no one
+        will be alerted!
+    </string>
+    <string name="register_emergency_contacts_welcome_message">To get the most from iWitness, it\'s important that you
+        add emergency contacts who you want to notified whenever you trigger a 911 call via iWitness. Listing all six
+        possible contacts will increase the chances of someone noticing the alert and responding quickly.
+    </string>
+    <string name="register_address">Register Address</string>
+    <string name="ok">Done</string>
+    <string name="relationship">Relationship (Optional)</string>
+    <string name="check_out_iwitness">Check out iWitness</string>
+    <string name="send_invitaion_success">Invitation sent successfully</string>
+    <string name="NewPasswordRequired">New Password is required</string>
+    <string name="email_header">Email:</string>
+    <string name="name_header">Name:</string>
+    <string name="phone_header">Phone:</string>
+    <string name="edit">Edit</string>
+    <string name="height_and_weight_header">Height and Weight:</string>
+    <string name="ethnicity_header">Ethnicity:</string>
+    <string name="eye_color_header">Eye Color:</string>
+    <string name="hair_color_header">Hair Color:</string>
+    <string name="distinguishing_features_header">Distinguishing Features:</string>
+    <string name="phone2_number">Phone 2</string>
+    <string name="save">Save</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Update Password</string>
+    <string name="distinguish">PERSONAL FEATURES</string>
+    <string name="height_select">Select Height</string>
+    <string name="height">Height</string>
+    <string name="hint_height">Height</string>
+    <string name="weight">Select Weight</string>
+    <string name="hint_weight">Weight</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="hint_birthdate">Date of Birth</string>
+    <string name="eye_color">Select Eye Color</string>
+    <string name="hint_eye_color">Eye Color</string>
+    <string name="hair_color">Select Hair Color</string>
+    <string name="hint_hair_color">Hair Color</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="ethnicity">Select Ethnicity</string>
+    <string name="hint_ethnicity">Race/Ethnicity</string>
+    <string name="gallery">Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="cap_cancel">CANCEL</string>
+    <string name="camera">Camera</string>
+    <string name="photo_library">Photo Library</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="log_out">Log out</string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+    <string name="phone">Mobile No</string>
+    <string name="phone_no">Mobile Number</string>
+    <string name="contact_not_found">Could not get contact\'s information. Please make sure this is not the imported
+        contact from Facebook or other provider.
+    </string>
+    <string name="choose_contact">Choose Contact</string>
+    <string name="short_phone_header">P:</string>
+    <string name="short_email_header">E:</string>
+    <string name="contacts">Contacts</string>
+    <string name="emergency_contact_limit_reached">Cannot add more than 6 emergency contacts</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="confirm_delete">Are you sure you want to delete this contact from Emergency Contacts list?</string>
+    <string name="update_address_success">Update address successful</string>
+    <string name="register_emergency_contact_success">Register emergency contact successful</string>
+    <string name="delete_contact_success">Delete contact successful</string>
+    <string name="profile_settings">Settings</string>
+    <string name="enable_torch">Camera Light</string>
+    <string name="enable_shake_to_call_911">Shake to Call</string>
+    <string name="enable_tap_to_call">Tap to Call</string>
+    <string name="tap_or_shake_to_send_for_help">Tap or shake to send for help</string>
+    <string name="tap_to_send_for_help">Tap to send for help</string>
+    <string name="time_to_record_an_event">Time to record an event</string>
+    <string name="off">OFF</string>
+    <!--<string name="info">Info</string>-->
+    <string name="share">Share</string>
+    <string name="on">ON</string>
+    <string name="min_recording_time_required">Please increase the recording time to at least 30 seconds.</string>
+    <string name="end_tutorial">End Tutorial</string>
+    <string name="cap_iwitness_is_now_armed">IWITNESS IS NOW ARMED</string>
+    <string name="tutorial_12">IWITNESS SHOULD BE USED AS ONE PART OF AN OVERALL PLAN TO KEEP SAFE, AND IS NOT A
+        SUBSTITUTE FOR COMMON SENSE. ALWAYS AVOID WALKING ALONE, ESPECIALLY IN AREAS THAT ARE UNFAMILIAR TO YOU OR MAKE
+        YOU FEEL UNSAFE.
+    </string>
+    <string name="tutorial_11_call911" formatted="false">YOU MAY CALL %s IMMEDIATELY AT ANY TIME BY TAPPING THE \'%s NOW\' BUTTON AT THE
+        LOWER RIGHT SIDE OF THE SCREEN.
+    </string>
+    <string name="tutorial_10_automatic_call_911">IF YOUR PHONE IS KNOCKED FROM YOUR HAND BEFORE YOU HAVE A CHANCE TO
+        ACTIVATE THE ACTION MODE, THIS SUDDEN MOVEMENT WILL TRIGGER AN AUTOMATIC CALL TO %s.
+    </string>
+    <string name="tutorial_9_cancel_call_911">IF YOU\'VE DIALED %s IN ERROR, SIMPLY PRESS THE CANCEL BUTTON.</string>
+    <string name="tutorial_8_feel_endanger">IF THE SITUATION ESCALATES AND YOU FEEL ENDANGERED, TAP YOUR SCREEN AGAIN TO
+        PUT IWITNESS INTO ACTION MODE. FOUR THINGS ARE NOW DESIGNED TO HAPPEN AUTOMATICALLY:
+    </string>
+    <string name="tutorial_8_phone_begin_flash">YOUR PHONE WILL BEGIN TO FLASH.\n\nAFTER 5 SECONDS, %s WILL BE
+        CALLED.\n\nYOUR CONTACTS WILL BE SENT AN EMAIL INFORMING THEM THAT YOU FEEL ENDANGERED.\n\nYOUR GPS COORDINATES
+        WILL BE SENT TO YOUR CONTACTS AND THE SECURE SERVER.
+    </string>
+    <string name="tutorial_7_aim_camera">AIM YOUR CAMERA AT THE PERSON OR SITUATION THAT FEELS THREATENING, JUST AS YOU
+        DO WHEN TAKING ANY PICTURE.
+    </string>
+    <string name="tutorial_7_broadcast_audio">THE VIDEO AND AUDIO BEING BROADCAST TO A SECURE SERVER AND CANNOT BE
+        RETRIEVED OR UNDONE BY THE POTENTIAL PERPETRATOR. IT IS NOW IN THE POTENTIAL PERPETRATOR\'S BEST INTEREST TO
+        WALK AWAY BEFORE THE SITUATION ESCALATES.
+    </string>
+    <string name="tutorial_6_capture_mode">ANY TIME YOU BEGIN TO FEEL UNSAFE, TAP YOUR SCREEN TO ACTIVATE THE CAPTURE
+        MODE. IWITNESS WILL NOW ATTEMPT TO:
+    </string>
+    <string name="tutorial_6_capture_steps">1. CAPTURE VIDEO AND AUDIO CLIPS.\n\n2. BROADCAST THE CLIPS TO A SECURE
+        SERVER.\n\n3. EMIT AN AUDIO CHIRP AND DISPLAY A BLINKING RED DOT ON SCREEN TO CONFIRM THAT YOU\'RE
+        RECORDING.\n\n4. DISPLAY A FIVE-MINUTE COUNTDOWN. TAP THE BUTTON AT THE BOTTOM OF THE PAGE EVERY FIVE MINUTES
+        FOR CONTINUOUS DATA CAPTURE.\n\n5. EMITS A STEADY LIGHT
+    </string>
+    <string name="tutorial_5_always_carry_phone">ALWAYS CARRY YOUR PHONE IN YOUR HAND, SO YOU\'RE READY TO CAPTURE AND
+        SEND AUDIO AND VIDEO AND CALL %s THE INSTANT TROUBLE ARISES.
+    </string>
+    <string name="tutorial_4_arm_iwitness">ARMING IWITNESS \n\nWHEN YOU\'RE ABOUT TO ENTER AN AREA THAT COULD BE
+        POTENTIALLY DANGEROUS:
+    </string>
+    <string name="tutorial_4_arm_iwitness_steps">1. OPEN IWITNESS BY TAPPING THE APPLICATION BUTTON. \n\n 2. ARM
+        IWITNESS BY TAPPING THE RED \'ARM IWITNESS BUTTON\'
+    </string>
+    <string name="tutorial_4_successful_arm_iwitness">AN AUDIO CHIRP WILL TELL YOU THAT IWITNESS HAS BEEN SUCCESSFULLY
+        ARMED AND A BLINKING LIGHT WILL BE EMITTED FROM YOUR PHONE, IF YOUR PHONE HAS THAT FEATURE.
+    </string>
+    <string name="tutorial_3_optimize_phone">FOR THE MOST EFFECTIVE IWITNESS SERVICE, ALWAYS OPTIMIZE YOUR PHONE IN THE
+        FOLLOWING FOUR WAYS:
+    </string>
+    <string name="tutorial_3_ringer_volume">TURN YOUR RINGER VOLUME TO ITS MAXIMUM LEVEL.</string>
+    <string name="tutorial_3_battery_charged">MAKE SURE YOUR BATTERY IS FULLY CHARGED.</string>
+    <string name="tutorial_3_signal">MAKE SURE YOUR SIGNAL IS AT FULL STRENGTH.</string>
+    <string name="tutorial_3_gps">ENABLE YOUR GPS FUNCTIONALITY. (GO TO \'SETTINGS\')</string>
+    <string name="tutorial_2_favorite_button">TO MAKE SURE THAT IWITNESS IS QUICKLY AND EASILY ACCESSIBLE WHEN YOU NEED
+        IT, WE STRONGLY SUGGEST INCLUDING THE APP BUTTON AMONG YOUR FAVORITES.
+    </string>
+    <string name="faves_bar">Faves Bar</string>
+    <string name="tutorial_1_iwitness_first_time">BEFORE USING IWITNESS FOR THE FIRST TIME, PLEASE CAREFULLY REVIEW THIS
+        TUTORIAL, WHICH WILL WALK YOU THROUGH ITS PROPER USE AND SOME KEY FEATURES.
+    </string>
+    <string name="tutorial_1_for_your_safety">FOR YOUR SAFETY, THIS TUTORIAL IS MANDATORY BEFORE PUTTING THE APP TO
+        WORK.
+    </string>
+    <string name="yearly_subscription_new">Yearly Subscription</string>
+    <string name="monthly_subscription_new">Monthly Subscription</string>
+
+    <string name="purchase">Purchase</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="contact_detail">Contact Detail</string>
+    <string name="subscription">Subscription</string>
+    <string name="gcm_ProfileUpdated">Your profile has been updated</string>
+    <string name="test_subscription">Test Subscription</string>
+    <string name="google_play_service_not_available">Google Play Service is not available or you don\'t have network
+        connection. Please try again later.
+    </string>
+    <string name="empty_video_list">You currently have no videos to view. After you record an event via the iWitness
+        app, you may view videos in app. They will be stored on our secure servers and are not able to be deleted via
+        the app.
+    </string>
+    <string name="empty_contact_list">You have not chosen any emergency contacts, for your safety please add emergency
+        contacts
+    </string>
+    <string name="add_emergency_contact">Add Emergency Contact</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="cap_pause">PAUSE</string>
+    <string name="cap_stop">STOP</string>
+    <string name="eye_color_label">Eye Color :</string>
+    <string name="hair_color_label">Hair Color :</string>
+    <string name="register_profile_required">Please register your profile before adding emergency contact.</string>
+    <string name="emergency_options">EMERGENCY OPTIONS</string>
+    <string name="emergency_number">Emergency Number</string>
+    <string name="emergency_number_title">Select Emergency No</string>
+    <string name="called">CALLED</string>
+    <string name="called_mistake">If this was made by mistake,\n please cancel this call \n within 5 seconds.</string>
+    <string name="being_call_911">You have initiated a %s call. </string>
+    <string name="police_called">Video and audio are being saved \n to the cloud and can\'t be deleted.\n\nYour emergency contacts and \n authorities have been notified \n of your location.</string>
+    <string name="police_called_headline">The Police are being called! \n\n</string>
+    <string name="touch_screen">TOUCH SCREEN TO CALL %s</string>
+    <string name="touch_or_shake_screen">TOUCH SCREEN OR SHAKE TO CALL %s</string>
+    <string name="record_time">Record Time</string>
+    <string name="record_time_titles">Recording Time Limit</string>
+    <string name="record_time_limit">Time Limit (mins)</string>
+    <string name="password_required">Mobile Number Changed</string>
+    <string name="update_phone_password_required">Enter your password to confirm this update.
+    </string>
+    <string name="sign_out">Log Out</string>
+    <string name="recipient">Recipient</string>
+    <string name="recipient_info">RECIPIENTS</string>
+    <string name="lng">Lng:</string>
+    <string name="lat">Lat:</string>
+    <string name="header_created">Created:</string>
+    <string name="logo">logo</string>
+    <string name="signup">Sign Up</string>
+    <string name="signup_for_iwitness">Create Account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="video">video</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="enter_email_to_share_iwitness">Enter an email address to share iWitness</string>
+    <string name="seach">Search</string>
+    <string name="event_location">Event\'s location</string>
+    <string name="google_play_unavailable">Google Play Service is currently unavailable.</string>
+    <string name="link_map_event"><![CDATA[<a href=\'#\'>Map Event</a>]]></string>
+    <string name="app_armed">Arming Options</string>
+    <string name="default_camera_options">DEFAULT CAMERA OPTIONS</string>
+    <string name="default_record_options">DEFAULT RECORDING OPTIONS</string>
+    <string name="automatic_call_emergency">Automatically call emergency phone number if phone is dropped or shaken
+    </string>
+    <string name="localization">Localization</string>
+    <string name="enter_your_email_to_restore_password">Enter your email or mobile number to restore password.</string>
+    <string name="success_forgot_password">We just sent an email on how to restore your password!
+    </string>
+    <string name="fail_forgot_password">Could not send email to your email address at the moment.
+    </string>
+    <string name="gender">Gender:</string>
+    <string name="done">Done</string>
+    <string name="gps_not_enabled">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="gps_settings">GPS settings</string>
+    <string name="warning">Warning</string>
+    <string name="disclamer_arm_iwitness">iWitness relies upon the proper functioning of your smartphone, its software,
+        and your data plan. It requires a reserve of battery power, ringer set to high, and a strong network connection.
+        \n\n All or some of these elements are subject to failure. There is no guarantee that even iWitness\' proper
+        operation will prevent harm to you or your property.
+    </string>
+    <string name="i_understand">I Understand</string>
+    <string name="renew_subscription">Please renew you subscription to restore full app functionality</string>
+    <string name="subscription_expired">Subscription Expired</string>
+    <string name="delete">Delete</string>
+    <string name="confirm_delete_event_message">Would you like to delete this event?</string>
+    <string name="confirm_delete_event_title">Delete Event Confirmation</string>
+    <string name="permlab_flashlight">Permission Flashlight</string>
+    <string name="permdesc_flashlight">Permission Flashlight</string>
+    <string name="not_your_location">Based on your location, this is not a valid option</string>
+    <string name="timezone">TimeZone</string>
+    <string name="timezone_select">Select TimeZone</string>
+    <string name="select">Select...</string>
+    <string name="network_not_available">Network is not available.</string>
+    <string name="strobe_light">Strobe Light</string>
+    <string name="title_event_location">Event Location</string>
+    <string name="address_book">Address Book</string>
+    <string name="new_contact">New Contact</string>
+    <string name="emergency_number_changed" formatted="false">We have detected a different emergency number for your currently location. Change from %s to %s?</string>
+    <string name="videoduration">VideoRecordDuration</string>
+    <string name="recordcontinue">Do you want to continue recording?</string>
+    <string name="videos_stored">Videos have been stored in the cloud and cannot be deleted.</string>
+    <string name="optimize">Optimize your phone like this...</string>
+    <string name="optimize1">You must have service for this application to work properly.</string>
+    <string name="optimize2">Allow access to camera and microphone for this application.</string>
+    <string name="optimize3">Enable location services for this application.</string>
+    <string name="optimize4">Make sure your Auto-Lock is set to \'never\'.</string>
+    <string name="optimize5">Turn your ringer volume to its maximum level.</string>
+    <string name="optimize6">Make sure your battery is fully charged.</string>
+    <string name="tip">A great tip for you...</string>
+    <string name="tip1">Add iWitness to your favorites bar for easy \n access.</string>
+    <string name="disclimer">Important iWitness Disclaimer</string>
+    <string name="tapto_record">Tap "REC" to continue Recording</string>
+    <string name="finished_record">Video has finished recording.</string>
+    <string name="like_send_notification">Would you like to send a Safe notification to your Emergency Contacts?</string>
+    <string name="message_bottom_bothoff"></string>
+    <string name="message_bottom_bothoff1">TAP "Call</string>
+    <string name="camera_access">Camera access required to use this application. Please enable permissions to tap on iWitness app icon-> enable permissions of Camera and Microphone to record video.</string>
+
+    <string name="bulleted_list">
+        <li>The price of an auto-renewing subscription is $2.99 monthly or $29.99 annually.</li>\n\n
+        <li>Payment will be charged to Google Play Account at confirmation of purchase.</li>\n\n
+        <li>Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period.</li>\n\n
+        <li>If your subscription expires, you can not have access to video recording feature, alerting  and accessing emergency contacts.</li>\n\n
+        <li>Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal.</li>\n\n
+        <li>Subscriptions can be managed by the user and auto-renewal may be turned off by going to the users Google Play account settings or https://payments.google.com after purchase.</li>\n\n
+        <li>Subscriptions will remain active until the subscription period ends. No refunds or partial refunds will be made.</li>\n
+
+    </string>
+    <string name="title_activity_on_boarding_screens">OnBoardingScreens</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_my_bottomsheet_dialog_fragment">MyBottomsheetDialogFragment
+    </string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_my_bottomsheet_fragment">MyBottomsheetFragment</string>
+    <string name="title_Alert">Alert</string>
+
+
+    <!-- Record Video Fragment Strings -->
+    <string name="str_record_video_fragment">RecordVideoFragment</string>
+    <string name="str_date_format">mm:ss</string>
+    <string name="str_authorities_alerted_text">Authorities have been called!</string>
+    <string name="str_emergency_contact_notified">Emergency Contact has been notified!</string>
+    <string name="str_alarm_triggered">Alaram Triggered</string>
+    <string name="video_sent">Video Has been sent</string>
+    <string name="str_tap_or_shake_to_call">Tap or shake to call</string>
+    <string name="str_tap_to_call">Tap to call</string>
+    <string name="str_tap_or_shake_to_trigger">Tap or shake to trigger</string>
+    <string name="str_tap_to_trigger">Tap to trigger</string>
+    <string name="str_contact">Contact</string>
+    <string name="str_alert">Alert</string>
+    <string name="str_close">CLOSE</string>
+    <string name="str_sound_and_alarm">SOUND AND LIGHT ALARM</string>
+    <string name="str_call_emergency_contact">EMERGENCY CONTACT</string>
+    <string name="str_call">CALL</string>
+
+    <!-- Subscription Page String -->
+    <string name="str_app_that_save_your_life">The App that could save your life</string>
+    <string name="str_subscribe_text">Subscribe in less than one minute</string>
+    <string name="yearly_subscription">Annual Auto Renewal Subscription: $29.99 \n Just $2.50 per month</string>
+    <string name="monthly_subscription">Monthly Auto Renewal Subscription: $2.99</string>
+    <string name="str_learn_more">Learn More</string>
+
+    <!-- Alert Dialog -->
+    <string name="str_send">Send</string>
+    <string name="str_recording_is_being_stored">Recording is being stored.</string>
+    <string name="str_streaming_stopped">Streaming stopped</string>
+    <string name="str_send_to_emergency_contact">Send to \n Emergency Contacts?</string>
+    <string name="str_cancel">Cancel</string>
+
+    <!-- Profile Screen -->
+    <string name="str_profile_name_hint">Full Name</string>
+    <string name="str_address_street_hint">Street, Apt #</string>
+
+    <!-- Number Authentication Screen -->
+    <string name="enter_number_string">Enter your Mobile Number</string>
+    <string name="you_will_receive_text_message_string">You will receive a text message \n with verification code</string>
+    <string name="send_Authentication_code">Send</string>
+
+
+    <!-- Number Authorization Screen -->
+    <string name="enter_number_verification_string">Enter verification code</string>
+    <string name="you_received_code_text_message_string">You received code via text message</string>
+    <string name="did_not_received_code_text_message_string">Didn\'t receive verification code?</string>
+    <string name="submit_Authorization_code">Submit</string>
+    <string name="reSend_Authorization_code">Resend</string>
+    <string name="title_activity_create_password">CreatePasswordActivity</string>
+
+    <!-- Create Password Screen -->
+    <string name="create_password">Create a password</string>
+    <string name="please_reenter">Please re-enter</string>
+    <string name="password_hint">Minimum of 8 characters must contain at least \n One upper case letter, One lower case letter, One number, One special character</string>
+
+
+    <string name="camera_capital">CAMERA</string>
+    <string name="photo_library_capital">PHOTO LIBRARY</string>
+</resources>

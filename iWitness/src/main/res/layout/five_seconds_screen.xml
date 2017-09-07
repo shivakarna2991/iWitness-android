@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textViewCalling911"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:gravity="center_horizontal"
+            android:paddingTop="68dp"
+            android:text="Calling 911"
+            android:textColor="@color/white"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textViewCancelSuggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To cancel, tap below within"
+            android:layout_marginTop="37dp"
+            android:textSize="14sp"
+            android:layout_below="@id/textViewCalling911"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/lblTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="5"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="100sp"
+            android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_Cancel"
+        android:layout_width="252.3dp"
+        android:layout_height="69.4dp"
+        android:text="@string/cancel"
+        android:background="@drawable/circle_edge_button"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="22.7sp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

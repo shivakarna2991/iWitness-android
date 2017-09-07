@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/recipientTextView"
+            style="@style/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="@string/recipient"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/recipientEditText"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/recipientTextView"
+            android:hint="Name"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/emailTextView"
+            style="@style/TextView"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="@string/email_address"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/emailTextView"
+            android:hint="Email"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+</LinearLayout>

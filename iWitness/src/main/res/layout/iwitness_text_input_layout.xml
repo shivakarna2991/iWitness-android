@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parentRelativeLayout"
+    android:background="@drawable/circle_edge_edittext">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="32dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/iwitness_password_layout_padding_left"
+            android:paddingRight="@dimen/iwitness_password_layout_padding_right"
+            android:textColorHint="@color/color_hint_text_color"
+            android:theme="@style/IWitnessPasswordStyle"
+            app:hintEnabled="false">
+
+            <com.iwitness.androidapp.views.IWitnessTextInputEditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/iwitness_password_text_size"
+                android:gravity="top|left"
+                android:padding="5dp"
+                android:layout_marginBottom="2dp"
+                android:scrollHorizontally="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/text_password_toggle"
+        android:layout_width="26dp"
+        android:layout_height="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp"
+        android:visibility="visible"
+        android:background="@drawable/password_status"
+        android:textOff=""
+        android:textOn=""/>
+
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iwitness.androidapp"
+    android:versionCode="36"
+    android:versionName="1.24.10"> <!-- Distribution -->
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="25" />
+
+    <!-- Screensize supported -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.microphone" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.javapapers.android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- <uses-permission android:name="android.permission.WRITE_CONTACTS" /> -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- <uses-permission android:name="android.permission.BROADCAST_STICKY" /> -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <permission
+        android:name="com.javapapers.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:description="@string/permdesc_flashlight"
+        android:label="@string/permlab_flashlight"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <application
+        android:name=".AppDelegate"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBm54NnGahgcFJmzkioJ3q5HPwiR7zbzXA" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".controllers.SplashscreenController"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- android:theme="@style/SplashTheme" -->
+        <!-- Authentication Flow -->
+        <activity
+            android:name=".controllers.authentication.LoginController"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- Authentication Flow -->
+        <activity
+            android:name=".controllers.authenticated.contact.ContactManager"
+            android:label="@string/choose_contact"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controllers.authentication.SubscriptionController"
+            android:label="@string/subscription"
+            android:parentActivityName=".controllers.authentication.LoginController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controllers.authentication.RegisterProfileController"
+            android:label="@string/RegisterProfile"
+            android:parentActivityName=".controllers.authentication.SubscriptionController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controllers.authentication.ForgotPasswordController"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controllers.authentication.LoginController" />
+        </activity>
+
+        <!-- Authenticated Flow -->
+        <activity
+            android:name=".controllers.authenticated.home.HomeContainerController"
+            android:label="@string/home"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".controllers.common.Call911Controller"
+            android:label=""
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controllers.authenticated.contact.ContactDetailController"
+            android:label="@string/contact_detail"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controllers.authenticated.home.HomeContainerController" />
+        </activity>
+        <activity
+            android:name=".controllers.authenticated.EditPasswordController"
+            android:label="@string/change_password"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controllers.authenticated.home.HomeContainerController" />
+        </activity>
+        <activity
+            android:name=".controllers.authenticated.StreamVideoController"
+            android:label="@string/event_playback"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".controllers.authenticated.home.HomeContainerController" />
+        </activity>
+        <activity
+            android:name=".controllers.authenticated.PushNotificationActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controllers.authenticated.home.VideoListController"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controllers.authenticated.home.NotificationListContentController"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controllers.authenticated.home.RegisterNotificationsController"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controllers.authentication.RegisterContactsController"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controllers.authentication.SubscriptionGuidelinesController"
+            android:label=""
+            android:screenOrientation="portrait" />
+
+        <!-- <receiver -->
+        <!-- android:name=".libraries.gcm.GcmBroadcastReceiver" -->
+        <!-- android:permission="com.google.android.c2dm.permission.SEND" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.REGISTRATION" /> -->
+
+
+        <!-- <category android:name="com.javapapers.android" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- <service android:name=".libraries.gcm.GCMNotificationIntentService" /> -->
+
+        <service android:name=".services.UserServices" />
+        <service
+            android:name=".services.CheckAppStatus"
+            android:stopWithTask="false" />
+
+        <receiver android:name=".network.NetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".OnBoarding.OnBoardingScreens"
+            android:label="@string/title_activity_on_boarding_screens"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".controllers.common.MyBottomsheetFragment"
+            android:label="@string/title_activity_my_bottomsheet_fragment"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".controllers.common.OnBoardingScreensActivity"
+            android:label="@string/title_activity_on_boarding_screens"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".controllers.authentication.NumberAuthenticationActivity" />
+        <activity android:name=".controllers.authentication.NumberAuthorizationActivity" />
+        <activity
+            android:name=".controllers.authentication.CreatePasswordActivity"
+            android:label="@string/title_activity_create_password"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".controllers.authentication.CreatePassword"></activity>
+    </application>
+
+</manifest>

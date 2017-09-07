@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:id="@+id/parentFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.iwitness.androidapp.libraries.widgets.CameraWidget
+            android:id="@+id/cameraView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textViewCalling911"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/calling_911_padding_top"
+            android:text="Calling 911"
+            android:textColor="@color/white"
+            android:textSize="@dimen/calling_911_text_size" />
+
+        <TextView
+            android:id="@+id/textViewCancelSuggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To cancel, tap below within"
+            android:layout_marginTop="@dimen/to_tab_or_cancel_margin_top"
+            android:textSize="@dimen/to_tab_or_cancel_text_size"
+            android:layout_below="@id/textViewCalling911"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/lblTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/timer_margin_top"
+            android:gravity="center"
+            android:text="5:00"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/timer_text_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+    <!--<RelativeLayout
+        android:id="@+id/rl_beforeTimer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvBeingCall911"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/being_call_911"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCall911"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvBeingCall911"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/called_mistake"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        &lt;!&ndash; <ImageView
+             android:id="@+id/imageView"
+             android:layout_width="fill_parent"
+             android:layout_height="60dp"
+             android:layout_above="@id/lblTimer"
+             android:layout_centerHorizontal="true"
+             android:layout_marginBottom="10dp"
+             android:src="@drawable/img_5secs"
+             android:visibility="gone" />&ndash;&gt;
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_afterTimer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/police_called_headline"
+            android:textColor="@android:color/black"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/police_called"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>-->
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/TextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_red"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

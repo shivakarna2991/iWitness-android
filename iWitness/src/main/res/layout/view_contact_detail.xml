@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture02_repeating"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="CONTACT INFO"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtFirstName"
+            style="@style/EditText"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName|textNoSuggestions|textCapWords"
+            android:padding="5dp">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtLastName"
+            style="@style/EditText"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName|textNoSuggestions|textCapWords"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            style="@style/EditText"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/txtPhone2"
+            style="@style/EditText"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="@string/phone2_number"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/txtEmailAddress"
+            style="@style/EditText"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="@string/email_optional"
+            android:inputType="textEmailAddress"
+            android:padding="5dp" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="5dp"
+            android:text="Note: We suggest using a personal email."
+            android:textColor="@android:color/black"
+            android:textSize="11sp"
+             />
+
+        <EditText
+            android:id="@+id/txtRelationship"
+            style="@style/EditText"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/relationship"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:id="@+id/deleteContactContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvContactStatus"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/icn_contact_pending"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnDeleteContact"
+                style="@style/ButtonArm"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="@string/delete_contact"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_saveContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/red_btn"
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

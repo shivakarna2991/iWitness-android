@@ -1,0 +1,149 @@
+<r k="root" v="root">
+    <r k="Algeria" v="17"/>
+    <r k="Cameroon" v="17"/>
+    <r k="Chad" v="17"/>
+    <r k="Djibouti" v="17"/>
+    <r k="Egypt" v="122"/>
+    <r k="Ghana" v="191"/>
+    <r k="Mali" v="17"/>
+    <r k="Mauritius" v="999"/>
+    <r k="Morocco - City" v="19"/>
+    <r k="Morocco - Royal Gendarmerie" v="177"/>
+    <r k="Nigeria" v=""/>
+    <r k="South Africa" v="10111"/>
+    <r k="Tunisia" v="197"/>
+    <r k="Rwanda" v="112"/>
+    <r k="Uganda 1" v="999"/>
+    <r k="Uganda 2" v="112"/>
+    <r k="Sudan" v=""/>
+    <r k="Sierra Leone" v="019"/>
+    <r k="Zambia" v="999"/>
+    <r k="Zimbabwe" v="995"/>
+    <r k="Afghanistan" v="119"/>
+    <r k="Bangladesh" v="999"/>
+    <r k="Bahrain" v=""/>
+    <r k="Cambodia" v=""/>
+    <r k="East Timor" v=""/>
+    <r k="China" v="110"/>
+    <r k="Myanmar" v=""/>
+    <r k="Hong Kong" v="112"/>
+    <r k="India" v="100"/>
+    <r k="Indonesia" v="110"/>
+    <r k="Iran" v="110"/>
+    <r k="Israel" v="100"/>
+    <r k="Japan" v="110"/>
+    <r k="Jordan" v=""/>
+    <r k="Kazakhstan" v="102"/>
+    <r k="North Korea" v="112"/>
+    <r k="South Korea" v="112"/>
+    <r k="Kuwait" v="777"/>
+    <r k="Lebanon 1" v="112"/>
+    <r k="Lebanon 2" v="999"/>
+    <r k="Macau" v=""/>
+    <r k="Maldives" v="119"/>
+    <r k="Malaysia" v="112"/>
+    <r k="Mongolia" v="102"/>
+    <r k="Nepal 1" v="100"/>
+    <r k="Nepal 2" v="103"/>
+    <r k="Oman" v=""/>
+    <r k="Pakistan" v="15"/>
+    <r k="Philippines" v="112"/>
+    <r k="Qatar" v=""/>
+    <r k="Saudi Arabia" v="999"/>
+    <r k="Singapore" v="999"/>
+    <r k="Sri Lanka 1" v="118"/>
+    <r k="Sri Lanka 2" v="119"/>
+    <r k="Syria" v="112"/>
+    <r k="Taiwan" v="110"/>
+    <r k="Tajikistan" v="102"/>
+    <r k="Thailand" v="191"/>
+    <r k="United Arab Emirates 1" v="999"/>
+    <r k="United Arab Emirates 2" v="112"/>
+    <r k="Vietnam" v="113"/>
+    <r k="Albania" v="129"/>
+    <r k="Armenia" v=""/>
+    <r k="Austria" v=""/>
+    <r k="Azerbaijan" v="102"/>
+    <r k="Belarus" v="102"/>
+    <r k="Belgium" v=""/>
+    <r k="Bosnia and Herzegovina" v="122"/>
+    <r k="Bulgaria" v=""/>
+    <r k="Croatia" v=""/>
+    <r k="Cyprus" v=""/>
+    <r k="Czech Republic" v=""/>
+    <r k="Denmark" v=""/>
+    <r k="Estonia" v=""/>
+    <r k="Faroe Islands" v=""/>
+    <r k="Finland" v=""/>
+    <r k="France" v=""/>
+    <r k="Georgia" v=""/>
+    <r k="Germany" v=""/>
+    <r k="Gibraltar" v=""/>
+    <r k="Greece" v=""/>
+    <r k="Greenland" v=""/>
+    <r k="Hungary" v=""/>
+    <r k="Iceland" v=""/>
+    <r k="Ireland" v=""/>
+    <r k="Italy" v=""/>
+    <r k="Latvia" v=""/>
+    <r k="Lithuania" v=""/>
+    <r k="Luxembourg" v=""/>
+    <r k="Republic of Macedonia" v=""/>
+    <r k="Malta" v=""/>
+    <r k="Moldova" v="902"/>
+    <r k="Monaco" v=""/>
+    <r k="Montenegro" v=""/>
+    <r k="Netherlands" v=""/>
+    <r k="Norway" v="112"/>
+    <r k="Poland" v=""/>
+    <r k="Portugal" v=""/>
+    <r k="Romania" v=""/>
+    <r k="Russia" v=""/>
+    <r k="San Marino" v="113"/>
+    <r k="Serbia" v=""/>
+    <r k="Slovakia" v=""/>
+    <r k="Slovenia" v=""/>
+    <r k="Spain" v=""/>
+    <r k="Sweden" v=""/>
+    <r k="Switzerland" v=""/>
+    <r k="Turkey" v=""/>
+    <r k="Ukraine" v=""/>
+    <r k="United Kingdom" v=""/>
+    <r k="Vatican City" v="113"/>
+    <r k="Australia" v=""/>
+    <r k="Fiji" v=""/>
+    <r k="New Zealand" v=""/>
+    <r k="Solomon Islands" v=""/>
+    <r k="Vanuatu" v=""/>
+    <r k="Canada" v=""/>
+    <r k="Mexico" v="066"/>
+    <r k="Saint Pierre and Miquelon" v="17"/>
+    <!--<r k="United States of America" v="911"/>-->
+    <r k="United States" v="911"/>
+    <r k="Guatemala 1" v="110"/>
+    <r k="Guatemala 2" v="120"/>
+    <r k="El Salvador" v=""/>
+    <r k="Costa Rica" v=""/>
+    <r k="Panama" v=""/>
+    <r k="Barbados" v="211"/>
+    <r k="Cayman Islands" v=""/>
+    <r k="Dominican Republic" v=""/>
+    <r k="Jamaica" v="119"/>
+    <r k="Trinidad and Tobago" v="999"/>
+    <r k="Nicaragua" v=""/>
+    <r k="Honduras" v=""/>
+    <r k="Haiti" v=""/>
+    <r k="Argentina" v="101"/>
+    <r k="Bolivia" v="110"/>
+    <r k="Brazil" v="190"/>
+    <r k="Chile" v="133"/>
+    <r k="Colombia" v="156"/>
+    <r k="Ecuador" v="101"/>
+    <r k="French Guiana" v="17"/>
+    <r k="Guyana" v="911"/>
+    <r k="Paraguay" v=""/>
+    <r k="Peru" v="105"/>
+    <r k="Suriname" v=""/>
+    <r k="Uruguay" v=""/>
+    <r k="Venezuela" v=""/>
+</r>

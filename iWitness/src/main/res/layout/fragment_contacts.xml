@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/texture02_repeating"
+    android:orientation="vertical"
+    android:layout_marginTop="?attr/actionBarSize">
+
+
+    <ListView
+        android:id="@+id/lvContacts"
+        android:layout_width="fill_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/llEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvEmptyContactList"
+            style="@style/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:text="@string/empty_contact_list">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_addcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvContacts"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/actionAddContact"
+        android:layout_below="@+id/lvContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/add" />
+    <TextView
+        style="@style/TextView"
+        android:layout_below="@+id/lvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:text="@string/add_contact"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/hidden_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/addressButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="-3dp"
+            android:background="@drawable/pwd_top"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:text="@string/address_book" />
+
+        <Button
+            android:id="@+id/contactButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/pwd_middle"
+            android:gravity="center"
+            android:layout_marginBottom="-3dp"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:text="@string/new_contact" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/pwd_bottom"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:text="@string/cancel" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_background">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/iw_icon_logo" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="195dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ivLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle_edge_edittext"
+            android:ellipsize="start"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="@string/phone_no"
+            android:inputType="number"
+            android:textColorHint="@color/color_hint_text_color"
+            android:textSize="21sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="195dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/phoneEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/circle_edge_edittext"
+            android:ellipsize="start"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/color_hint_text_color"
+            android:textSize="21sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="195dp"
+            android:layout_height="51dp"
+            android:layout_below="@id/passwordEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_edge_button_transparent"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            style="@style/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_below="@id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="handleForgotPasswordButtonOnPressed"
+            android:text="@string/forgot_password"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/buttonFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvForgotPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:src="@drawable/iw_btn_facebook" />
+
+
+        <Button
+            android:id="@+id/buttonCreateAccount"
+            android:layout_width="235.2dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/buttonFacebook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_edge_button"
+            android:text="Create an Account"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

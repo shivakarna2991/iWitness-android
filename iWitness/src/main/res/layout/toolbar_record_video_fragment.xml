@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/black_toolbar"
+    android:gravity="center_vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <ToggleButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/recording_status"
+        android:textColor="@android:color/white"
+        android:textOff="Start"
+        android:textOn=""
+        android:textSize="25px"/>
+
+    <TextView
+        android:id="@+id/toolbar_title_in_record_video_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        android:text="" />
+
+</android.support.v7.widget.Toolbar>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/black_toolbar"
+    android:gravity="center_vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="horizontal">
+
+    <ToggleButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/recording_status"
+        android:textColor="@android:color/white"
+        android:textOff="Start"
+        android:textOn=""
+        android:textSize="25px"/>
+
+    <TextView
+        android:id="@+id/toolbar_title_in_record_video_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        android:text="" />
+
+</LinearLayout>
+

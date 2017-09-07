@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtFirstName"
+                style="@style/EditText"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/first_name"
+                android:inputType="textPersonName|textNoSuggestions|textCapWords"
+                android:paddingLeft="10dp">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/txtLastName"
+                style="@style/EditText"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName|textNoSuggestions|textCapWords"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/txtEmailAddress"
+                style="@style/EditText"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/email_address_new"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                style="@style/EditText"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/phone_number_new"
+                android:inputType="phone"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                style="@style/EditText"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/txtConfirmPassword"
+                style="@style/EditText"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fields_mandatory"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnSaveContinue"
+                style="@style/ButtonLarge"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:onClick="handleSignUpButtonOnClicked"
+                android:text="@string/signup" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
